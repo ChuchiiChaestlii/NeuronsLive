@@ -128,7 +128,7 @@
                 client.connect();
 
                 client.on('connected', function (address, port) {
-                    client.action("neuronslive", "just connected!");
+                    client.action("imneurons", "just connected!");
                 });
                 client.on('chat', function (channel, user, message, self) {
                     var regcheck = new RegExp("^!salt ([0-9]{0,3})$");
